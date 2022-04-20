@@ -10,10 +10,10 @@ namespace Float_Int_Practicas //Numeros Decimales de precision simple, precision
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Introduce tu nombre: ");
-            string nombre = Console.ReadLine();
+            Console.WriteLine("Introduce tu nombre: "); 
+            string nombre = Console.ReadLine(); // ReadLine lee caracteres, siempre va a ser String. Para otros valores hay que convertirlo. Recoge el valor que introduce el usuario
 
-            string saludo = "Hola, ";
+            string saludo = "Hola, "; // String + variable y texto que devuelve la consola
 
            // string nombre = "Daniela";
 
