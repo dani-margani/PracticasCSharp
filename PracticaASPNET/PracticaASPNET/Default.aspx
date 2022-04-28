@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm3.aspx.cs" Inherits="PracticaASPNET.WebForm3" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="PracticaASPNET.Default" %>
 
 <!DOCTYPE html>
 
@@ -9,8 +9,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        Hola
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <div>
+            Página principal</div>
     </form>
 </body>
 </html>

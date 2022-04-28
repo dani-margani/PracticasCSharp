@@ -25,5 +25,7 @@ namespace PracticaASPNET
             Session["nombre"] = TextBox1.Text;
             Response.Redirect("WebForm3.aspx");
         }
+
+        
     }
 }
