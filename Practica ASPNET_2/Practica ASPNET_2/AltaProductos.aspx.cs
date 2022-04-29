@@ -22,7 +22,18 @@ namespace Practica_ASPNET_2
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            var conexion = new SqlConnection
+            //Aca creo la variable de conexion y le agrego la cadena de conexion
+            var conexion = new SqlConnection(
+                //@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C: \Users\Usuario\Desktop\PracticasCSharp\Practica ASPNET_2\Practica ASPNET_2\App_Data\PracticaADONETdb.mdf;Integrated Security=True");
+                @"Data Source = (LocalDB)\MSSQLLocalDB; Initial Catalog = PracticaADONETdb; Integrated Security = True");
+            string sql = "INSERT INTO productos (nombre,precio) values('" + TextBox1.Text + "','" + TextBox2.Text + "')";
+            //Armamos concatenando el comando 
+            
+            //Response.Write(sql);
+            var comando = new SqlCommand(sql, conexion); //Creamos el comando
+            conexion.Open();
+            comando.ExecuteNonQuery(); // Lo ejecutamos //muy parecido a JavaJDBC
+            conexion.Close();
         }
     }
 }
